@@ -3,19 +3,26 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
 		<title>Mega Muscle Fitness</title>
 	</head>
+	
 	<body>
 		<label>Log In</label>
 		<br>
-		<label>Username: </label>
+		<br>
+		<br>
+		<label class="inputlbl">Username: </label>
 		<input id='enterUsername' type='text'>
 		<br>
-		<label>Password: </label>
+		<br>
+		<label class="inputlbl">Password: </label>
 		<input id='enterPassword' type='text'>
 		<br>
-		<button id='loggingIN' onclick="LogIn()">ENTER</button>
-		<a href='/Home.html'>Enter</a>
+		
+		<a href='/Home.html'>
+			<button id='loggingIN' onclick="LogIn()">ENTER</button>
+		</a>
 	</body>
 	<script type='module' src="/LogIn.js" charset="utf-8"></script>
 </html>
