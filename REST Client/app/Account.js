@@ -2,10 +2,10 @@
 'use strict'
 
 // Encapsulation
-function Person(username, password, IDnum) {
+function Person(username, password, id) {
 	this.UN = username
 	this.PW = password
-	this.ID = IDnum
+	this.id = IDnum
 	
 	// getter
 	Object.defineProperty(this, 'fullName', {
@@ -16,6 +16,15 @@ function Person(username, password, IDnum) {
 Person.prototype.getLabel = function() {
 	return `${this.UN} ${this.PW}`
 }
+
+function Person(username, password, id) {
+	// Inheritance of properties 
+	Person.call(this, fn, ln, dob)
+	this.cwid = id
+}
+
+// inheritance of methods 
+Object.setPrototypeOf(CampusMember.prototype, Person.prototype)
 
 // Polymorphism 
 CampusMember.prototype.getLabel = function() {
